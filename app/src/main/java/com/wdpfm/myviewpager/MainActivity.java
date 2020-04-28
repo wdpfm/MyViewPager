@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         aList.add(li.inflate(R.layout.view_one,null,false));
         aList.add(li.inflate(R.layout.view_two,null,false));
         aList.add(li.inflate(R.layout.view_threee,null,false));
-        mAdapter=new MyPagerAdapter(aList);
+        mAdapter=new MyPagerAdapter(aList,MainActivity.this);
         myvpager.setAdapter(mAdapter);
     }
 }
